@@ -4,19 +4,19 @@
 * **Description:** Practice displaying data from arrays and objects using loops and ES6 Template Strings.
 
 ## Lesson
-**Arrays**
+### Arrays
 Data structures denoted by square brackets.
 `let myArray = ["hello", "there", 1, true]`
 To reference a specific item in an array, use that item's index number. Arrays have indexes that start at 0 (not 1!).
-```
+```javascript
 myArray[0] // "hello"
- myArray[1] // "there"
- myArray[2] // 1
- myArray[3] // true
+myArray[1] // "there"
+myArray[2] // 1
+myArray[3] // true
 ```  
-**Objects**
+### Objects
 Data structures denoted by curly brackets, and key-value pairs.
-```
+```javascript
 let myObject = {
   name: "bella",
   github: "isabellatea",
@@ -26,7 +26,7 @@ let myObject = {
 ```
 
 To reference a specific item in an object, use that item's key.
-```
+```javascript
 myObject["name"] // bella
 myObject["github"] // isabellatea
 myObject["number"] // 8
@@ -35,18 +35,18 @@ myObject["likesPuppies"] // true
 
 Note that you can reference a value by it's key using `myObject["KEY_NAME"]` or `myObject.KEY_NAME` if the key name is known.
 
-**Template Strings**
+### Template Strings
 ES6 introduced template strings to make it easier to incorporate references into our code.
 
 When we want to incorporate references, we use the syntax `${reference_here}`.
 
 Old Way:
-```
+```javascript
 let mySentence = "Hello there my name is " + myObject["name"] + " and my github handle is " + myObject["github"] + ".  My favorite number is " + myObject["number"] + " and it is " + myObject["likesPuppies"] + that I like puppies.
 ```
 
 New ES6 Way:
-```
+```javascript
 let mySentence = "Hello my name is ${myObject["name"]} and my github handle is ${myObject["github"]}. My favorite number is ${myObject["number"]} and it is ${myObject["likesPuppies"]} that I like puppies."
 ```
 
@@ -59,8 +59,8 @@ Refer to this [great article](https://wesbos.com/template-strings-html/) by Wes 
 
 *You will also need to be familiar with basic for loop structure as well as jQuery (.append) to complete the first few challenges.*
 
-**For Loop Strcuture**
-```
+### For Loop Strcuture
+```javascript
 for (var i = 0; i < array.length; i++) {
   //loop things here
 }
@@ -70,8 +70,8 @@ for (var key in obj) {
 }
 ```
 
-**jQuery Append**
-```
+### jQuery Append
+```javascript
 let mySentence = "hello there";
 $("#target-element").append(mySentence);
 ```
@@ -90,7 +90,7 @@ $("#target-element").append(mySentence);
 
 ## Examples
 Given a list of contacts in an array, display them under the element with the id of "myListofContacts":
-```
+```javascript
 for (var i = 0; i < contactList.length; i++) {
   let newElement = `
     <p>${contactList[i]}</p>
@@ -100,7 +100,7 @@ for (var i = 0; i < contactList.length; i++) {
 ```
 
 Given an object `allOfMyInformation`, display multiple sections of data on your website under the element with the id of "myInfo":
-```
+```javascript
 let newElement = `
   <h1>${allOfMyInformation["name"]}</h1>
   <img src="${allOfMyInformation["photoURL"]}">
@@ -110,8 +110,19 @@ $("#myInfo").append(newElement);
 
 ```
 
+Given an array of objects `mySongs`, display all of the songs with their title, cover art, and duration under the element with the id of "allOfMySongs":
+```javascript
+for (var i = 0; i < mySongs.length; i++) {
+  let song = `
+    <h2>${mySongs[i]["title"]}</h2>
+    <img src="${mySongs[i]["coverArtURL"]}">
+    <p>Song Duration: ${mySongs[i]["duration"]}</p>
+  `
+  $("#allOfMySongs").append(song);
 
+}
 
+```
 
 
 
