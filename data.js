@@ -1,4 +1,4 @@
-//EXERCISE 1: ARRAY PRACTICE
+//CHALLENGE 1: ARRAY PRACTICE
 //array of Marvel movies in MCU Chronological Order
 let movieList = [
   "Captain America: The First Avenger",
@@ -26,7 +26,7 @@ let movieList = [
 
 
 
-//EXERCISE 2: OBJECT PRACTICE
+//CHALLENGE 2: OBJECT PRACTICE
 //object of data related to the "Iron Man" movie
 let movieIronMan = {
     timelinePosition: 3,
@@ -41,7 +41,7 @@ let movieIronMan = {
   }
 
 
-//EXERCISE 3: ARRAY OF OBJECTS PRACTICE
+//CHALLENGE 3: ARRAY OF OBJECTS PRACTICE
 //array of objects of all data related to MCU
 let movieListDetailed = [
   {

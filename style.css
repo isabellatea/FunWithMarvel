@@ -11,6 +11,12 @@ body {
 }
 
 /* Navigation Bar */
+#logo {
+  float: left;
+  margin: 5px;
+
+}
+
 ul {
   list-style-type: none;
   margin: -.5em;
@@ -57,16 +63,21 @@ li a:hover {
 
 /* Cards */
 .card {
-  background-color: white;
-  opacity: .85;
-  width: 400px;
-  color: black;
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
+
 }
 
 .poster {
-  max-width: 250px;
-  margin-left: 50px;
+
+}
+
+
+/*Credits */
+.navPage {
+  color: black;
+  font-size: 30px;
+  background-color: white;
+  margin-top: 35%;
+  margin: 50px;
+  padding: 50px;
+
 }
