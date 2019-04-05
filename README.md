@@ -40,12 +40,12 @@ ES6 introduced template strings to make it easier to incorporate references into
 
 When we want to incorporate references, we use the syntax `${reference_here}`.
 
-Old Way:
+**Old Way:**
 ```javascript
 let mySentence = "Hello there my name is " + myObject["name"] + " and my github handle is " + myObject["github"] + ".  My favorite number is " + myObject["number"] + " and it is " + myObject["likesPuppies"] + that I like puppies.
 ```
 
-New ES6 Way:
+**ES6 Way:**
 ```javascript
 let mySentence = "Hello my name is ${myObject["name"]} and my github handle is ${myObject["github"]}. My favorite number is ${myObject["number"]} and it is ${myObject["likesPuppies"]} that I like puppies."
 ```
@@ -53,7 +53,7 @@ let mySentence = "Hello my name is ${myObject["name"]} and my github handle is $
 Both result in:
 *Hello my name is bella and my github handle is isabellatea.  My favorite number is 8 and it is true that I like puppies.*
 
-If you are creating HTML elements, you can use backticks \` to surround multiple lines.
+**If you are creating HTML elements, you can use backticks \` to surround multiple lines.**
 
 Refer to this [great article](https://wesbos.com/template-strings-html/) by Wes Bos for a more in-depth explanation and advanced uses of template strings.
 
@@ -87,6 +87,8 @@ $("#target-element").append(mySentence);
 * **Challenge Four:** Create a homepage for your website. Link all relevant navigation bar items to the appropriate functions.
 
 * **Challenge Five:** For the "Release Date" on your navigation bar, display the `movieListDetailed` in order by Release Date.
+
+* **Challenge Six:** Add style! Create cards! Add your flair and creativity.
 
 ## Examples
 Given a list of contacts in an array, display them under the element with the id of "myListofContacts":
