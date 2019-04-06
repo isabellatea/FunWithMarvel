@@ -3,6 +3,9 @@
 * **Level:** Beginner
 * **Description:** Practice displaying data from arrays and objects using loops and ES6 Template Strings.
 
+![screenshot](http://i65.tinypic.com/usgle.png)
+
+
 ## Lesson
 ### Arrays
 Data structures denoted by square brackets.
@@ -125,9 +128,6 @@ for (var i = 0; i < mySongs.length; i++) {
 }
 
 ```
-
-![screenshot](http://i65.tinypic.com/usgle.png)
-
 
 
 ## Solution Gist
