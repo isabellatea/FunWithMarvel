@@ -3,7 +3,7 @@
 * **Level:** Beginner
 * **Description:** Practice displaying data from arrays and objects using loops and ES6 Template Strings.
 
-![screenshot](http://i65.tinypic.com/usgle.png)
+(Screenshot Coming Soon)
 
 
 ## Lesson
